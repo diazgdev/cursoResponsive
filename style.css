@@ -188,6 +188,52 @@ main {
     line-height: 1.9rem;
     color: var(--grey);
     background-color: var(--just-white);
+  
+    /*border: 1px solid red;*/
 
-    border: 1px solid red;
+}
+
+.table__top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.table__top-right {
+    border-radius: 0 15px 0 0;
+}
+
+.table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+
+.table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+
+.table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+
+.down {
+    display: inline-block;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.up {
+    display: inline-block;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
