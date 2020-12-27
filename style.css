@@ -485,9 +485,9 @@ main {
     width: 70%;
     min-width: 230px;
     max-width: 300px;
-    height: 250px;
+    height: auto;
     margin: 50px auto 0;
-    padding: 0 15px;
+    padding: 20px 15px;
     background-color: var(--just-white);
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
@@ -507,18 +507,18 @@ main {
 }
 
 .plan-card--title {
-    padding-top: 30px;
-    font-size: 4rem;
+    padding-top: 15px;
+    font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
     color: var(--black);
 }
 
 .plan-card--price {
-    padding: 5px 0;
-    font-size: 5.2rem;
+    margin: 10px 0;
+    font-size: 6.2rem;
     font-weight: bold;
-    line-height: 5.3rem;
+    line-height: 6.5rem;
     color: (var(--black));
 }
 
@@ -529,6 +529,96 @@ main {
 }
 
 .plan-card--saving {
+    margin: 20px auto;
     font-size: 1.2rem;
     color: #757575;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #FAF8F7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: "DM Sans";
+}
+
+.plan-card--ca span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("./assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom;
+}
+
+.basic {
+    position: absolute;
+    left: calc(50% - 55px);
+    width: 120px;
+    height: 32px;
+    top: -15px;
+    background-color: var(--secondary-blue);
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+
+.forlife {
+        position: absolute;
+        left: calc(50% - 55px);
+        width: 120px;
+        height: 32px;
+        top: -15px;
+        background-color: var(--grey);
+        border-radius: 8px;
+        color: var(--just-white);
+        font-size: 1.2rem;
+        padding: 6px;
+}
+
+.limited-container--card {
+    position: relative;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: auto;
+    margin: 50px auto 0;
+    padding: 20px 15px;
+    background-color: var(--warm-black);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.limited-card--title {
+    padding-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--off-white);
+}
+
+.limited-card--price{
+        margin: 10px 0;
+        font-size: 6.2rem;
+        font-weight: bold;
+        line-height: 6.5rem;
+        color: var(--off-white);
+    }
+    
+.limited-card--price span {
+        font-size: 1.2rem;
+        font-weight: 300;
+        vertical-align: text-top;
+    }
+
+.limited-card--saving {
+    margin: 20px auto;
+    font-size: 1.2rem;
+    color: var(--just-white);
 }
