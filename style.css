@@ -480,13 +480,25 @@ main {
     color: #757575;
 }
 
+/* Scroll horizontal */
+
+.plans-container--slider {
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    gap: 20px;
+}
+
 .plans-container--card {
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 220px;
     max-width: 300px;
     height: auto;
-    margin: 50px auto 0;
+    margin: 50px auto;
     padding: 20px 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -585,10 +597,10 @@ main {
 .limited-container--card {
     position: relative;
     width: 70%;
-    min-width: 230px;
+    min-width: 220px;
     max-width: 300px;
     height: auto;
-    margin: 50px auto 0;
+    margin: 50px auto ;
     padding: 20px 15px;
     background-color: var(--warm-black);
     border-radius: 15px;
@@ -620,5 +632,35 @@ main {
 .limited-card--saving {
     margin: 20px auto;
     font-size: 1.2rem;
+    color: var(--just-white);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+
+.left a {
+    text-decoration: none;
     color: var(--just-white);
 }
