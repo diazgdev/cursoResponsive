@@ -1,0 +1,24 @@
+.main-tables-container {
+    display: flex;
+    width: 930px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.main-product-detail {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product-cards--container {
+    padding: 0 50px;
+    margin: 0 auto;
+}
+
+.plans-container--slider {
+    justify-content: center;
+    width: 930px;
+    margin: 0 auto;
+}
